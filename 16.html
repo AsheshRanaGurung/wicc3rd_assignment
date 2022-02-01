@@ -1,0 +1,31 @@
+<html>
+  <head>
+    <title>JavaScript to print Odd Numbers</title>
+ 
+  </head>
+  <body>
+    <h3>Write a program that displays all the odd numbers from the range entered by the user.
+    </h3>
+    Start: <input type="number" min="0" id="start" value="1" />
+    End: <input type="number" id="end" min="1" value="20" />
+    <input type="button" onclick="printOddNums()" value="Print Odd Numbers" />
+    <div id="result"></div>
+    <script>
+        function printOddNums(){
+         
+          var start = document.getElementById("start").value;
+          var end = document.getElementById("end").value;
+          var oddNums = "<br>Odd Numbers:<br>";
+   
+          for(i=start; i<=end; i++){
+            
+            if(i % 2 != 0){
+              oddNums += i + "<br>";
+            }
+          }
+          //printing the values
+          document.getElementById("result").innerHTML = oddNums;
+        }
+      </script>
+  </body>
+</html>

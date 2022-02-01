@@ -1,0 +1,24 @@
+<html>
+  <head>
+    <title>JavaScript to print Odd Numbers</title>
+ 
+  </head>
+  <body>
+    <h3>A person is eligible to vote if his/her age is greater than or equal to 18. Write a program  to find out if he/she is eligible to vote.
+    </h3>
+    Enter your age: <input type="number"  id="start" value="1" />
+    <input type="button" onclick="validate()" value="Submit" />
+  
+    <script>
+        function validate() {
+            var age=document.getElementById("start").value;
+             if (age >= 18) {
+               alert("eligible to vote");
+            } else {
+                alert("not eligible to vote");
+            }
+        }
+
+      </script>
+  </body>
+</html>

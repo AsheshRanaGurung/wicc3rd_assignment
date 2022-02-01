@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+ 
+        <h2 > Calculate Age from Date of Birth <br> <br> </h2>   
+        <b> Enter Date of Birth: <input type="date" id = "DOB"> </b>  
+        <button type="submit" onclick = "ageCalculator()"> Calculate age </button> <br><br>  
+        <h3 id="result" ></h3>   
+     
+    <script>  
+        function ageCalculator() {  
+            var userinput = document.getElementById("DOB").value;  
+            var dob = new Date(userinput);  
+            var month_diff = Date.now() - dob.getTime();  
+            var age_dt = new Date(month_diff);    // calculate vako difference chai  date format ma convert vo
+            var year = age_dt.getUTCFullYear();   //extract year from date
+            var age = Math.abs(year - 1970);     // yo harek site ma 1970 use vaxa idk kina,
+            return document.getElementById("result").innerHTML =    
+                     "Age is: " + age + " years. ";  
+            
+        }  
+        </script> 
+</body>
+</html>
