@@ -31,18 +31,30 @@
 // str = "hello_i_am_string";
 // console.log("Original String: ", str);
 
-// output1 = str
-//   .replace(/_/g, "")
-//   .replace(/i/i, "I")
-//   .replace(/a/g, "A")
-//   .replace(/s/g, "S");
-// console.log(output1);
+// for-------helloIAmString
 
-// output2 = str.replace(/_/g, " ");
-// console.log(output2);
+// let temp = str.split("_");
+// for (let i = 1; i < temp.length; i++) {
+//   temp[i] = temp[i][0].toUpperCase() + temp[i].slice(1);
+// }
 
-// output3 = str.replace(/_/g, " ").replace(/h/g, "H");
-// console.log(output3);
+// console.log(temp.join(""));
+
+//for -----hello i am string
+
+// let temp = str.split("_");
+// let output = temp.join(" ");
+// console.log(output);
+
+//for------Hello I Am String
+// let temp = str.split("_");
+
+// for (let i = 0; i < temp.length; i++) {
+//   let newString = temp[i][0].toUpperCase() + temp[i].slice(1);
+//   temp[i] = newString;
+// }
+
+// console.log(temp.join(" "));
 
 // output4 = str
 //   .replace(/_/g, " ")
